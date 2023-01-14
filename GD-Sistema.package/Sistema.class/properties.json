@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GD-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colBibliotecas",
+		"colAutores",
+		"colUsuarios"
+	],
+	"name" : "Sistema",
+	"type" : "normal"
+}

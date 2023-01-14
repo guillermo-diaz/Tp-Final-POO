@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GD-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colBibliotecas",
+		"nombre",
+		"apellido",
+		"dni",
+		"contraseña",
+		"tieneMulta"
+	],
+	"name" : "Usuario",
+	"type" : "normal"
+}

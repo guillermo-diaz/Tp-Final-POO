@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GD-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colLibros",
+		"colPrestamos",
+		"identificador",
+		"direccion",
+		"nombre",
+		"telefono",
+		"representante"
+	],
+	"name" : "Biblioteca",
+	"type" : "normal"
+}

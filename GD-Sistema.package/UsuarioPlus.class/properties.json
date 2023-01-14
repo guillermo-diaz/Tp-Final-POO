@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Usuario",
+	"category" : "GD-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"fechaVencimientoCuota"
+	],
+	"name" : "UsuarioPlus",
+	"type" : "normal"
+}

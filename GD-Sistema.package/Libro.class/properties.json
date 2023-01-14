@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "GD-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colAutores",
+		"nombre",
+		"editorial",
+		"añoEdicion",
+		"estado"
+	],
+	"name" : "Libro",
+	"type" : "normal"
+}
