@@ -9,7 +9,8 @@
 		"usuario",
 		"colLibros",
 		"fechaRegistro",
-		"fechaEntrega"
+		"fechaEntrega",
+		"fechaMax"
 	],
 	"name" : "Prestamo",
 	"type" : "normal"

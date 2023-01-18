@@ -11,7 +11,7 @@
 		"apellido",
 		"dni",
 		"contraseña",
-		"tieneMulta"
+		"diasSuspendido"
 	],
 	"name" : "Usuario",
 	"type" : "normal"

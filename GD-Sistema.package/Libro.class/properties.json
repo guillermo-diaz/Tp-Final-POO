@@ -10,7 +10,7 @@
 		"nombre",
 		"editorial",
 		"añoEdicion",
-		"estado"
+		"esPrestado"
 	],
 	"name" : "Libro",
 	"type" : "normal"

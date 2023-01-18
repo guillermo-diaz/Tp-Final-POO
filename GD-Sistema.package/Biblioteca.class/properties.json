@@ -12,7 +12,8 @@
 		"direccion",
 		"nombre",
 		"telefono",
-		"representante"
+		"representante",
+		"diasPrestamos"
 	],
 	"name" : "Biblioteca",
 	"type" : "normal"
