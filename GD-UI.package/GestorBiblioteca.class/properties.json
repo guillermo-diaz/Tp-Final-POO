@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "BorderedMorph",
+	"category" : "GD-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botonCerrar"
+	],
+	"name" : "GestorBiblioteca",
+	"type" : "normal"
+}

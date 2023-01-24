@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimpleButtonMorph",
+	"category" : "GD-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bloque"
+	],
+	"name" : "Button",
+	"type" : "normal"
+}
