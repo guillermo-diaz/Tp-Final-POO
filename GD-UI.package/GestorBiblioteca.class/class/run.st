@@ -1,3 +1,3 @@
 running
 run 
-^ (self new) initialize openCenteredInWorld 
+^ (self new) initialize openInWindowLabeled: 'Gestor de Bibliotecas'

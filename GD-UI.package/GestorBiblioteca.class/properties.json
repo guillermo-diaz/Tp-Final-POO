@@ -6,7 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botonCerrar"
+		"botonLogin",
+		"botonSignup",
+		"botonSistema",
+		"inDni",
+		"inContra"
 	],
 	"name" : "GestorBiblioteca",
 	"type" : "normal"
