@@ -2,6 +2,7 @@ initialization
 initialize  
 
 super initialize. 
-self addBackground .
-self addButtons.
+self addBackground; addButtons; addTitles .
+
+
 
