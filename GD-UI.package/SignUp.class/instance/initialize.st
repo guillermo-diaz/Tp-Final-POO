@@ -3,5 +3,5 @@ initialize
 
 super initialize .
 
-self addFigure; addButtons .
+self addFigure; addButtons; addTitles  .
 
