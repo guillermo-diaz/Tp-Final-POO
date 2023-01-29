@@ -1,18 +1,19 @@
 {
 	"commentStamp" : "",
-	"super" : "BorderedMorph",
+	"super" : "Ventana",
 	"category" : "GD-UI",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"botonLogin",
-		"botonSignup",
-		"botonSistema",
-		"inDni",
-		"inContra",
-		"sistema"
+		"nombre",
+		"apellido",
+		"dni",
+		"contraseña",
+		"botonRegistrarse",
+		"rectangulo",
+		"plus"
 	],
-	"name" : "GestorBiblioteca",
+	"name" : "SignUp",
 	"type" : "normal"
 }

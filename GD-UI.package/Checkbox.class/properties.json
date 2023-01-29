@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "CheckboxMorph",
+	"category" : "GD-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Checkbox",
+	"type" : "normal"
+}

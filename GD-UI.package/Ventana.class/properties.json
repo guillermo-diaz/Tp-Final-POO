@@ -5,14 +5,7 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"botonLogin",
-		"botonSignup",
-		"botonSistema",
-		"inDni",
-		"inContra",
-		"sistema"
-	],
-	"name" : "GestorBiblioteca",
+	"instvars" : [ ],
+	"name" : "Ventana",
 	"type" : "normal"
 }

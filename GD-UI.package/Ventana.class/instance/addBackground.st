@@ -1,10 +1,11 @@
-initialization
+adding
 addBackground 
-	[
+
+[
     |fondo |
 self color: Color white.
 fondo:=(Form fromFileNamed: 'C:\Users\Guille\Desktop\POO\background11.png') asMorph.
-self extent: fondo extent.
+self extent: fondo extent .
 
 	 
 	self addMorphBack: fondo.
@@ -13,12 +14,3 @@ self extent: fondo extent.
 	self extent: 800@600.
 ]
 	
-	
-	 
-	
-	
-
-
-
-
-

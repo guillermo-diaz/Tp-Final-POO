@@ -1,8 +1,11 @@
 initialization
 initialize  
 
+
 super initialize. 
-self addBackground; addButtons; addTitles .
+self addBackground; addFigure; addButtons; addTitles. 
+
+
 
 
 
