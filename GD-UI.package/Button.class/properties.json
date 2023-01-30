@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "SimpleButtonMorph",
-	"category" : "GD-UI",
+	"category" : "GD-UI-Components",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

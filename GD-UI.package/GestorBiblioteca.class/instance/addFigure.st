@@ -1,6 +1,6 @@
 adding
 addFigure 
-|rectangulo|
+
 rectangulo := Morph new.
 	rectangulo  color: (Color r: 193 g: 193 b: 193) ; borderWidth: 4; borderColor: Color gray.
 	rectangulo extent: 275@350.

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Ventana",
-	"category" : "GD-UI",
+	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

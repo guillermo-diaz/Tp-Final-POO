@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "BorderedMorph",
-	"category" : "GD-UI",
+	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -11,7 +11,8 @@
 		"botonSistema",
 		"inDni",
 		"inContra",
-		"sistema"
+		"sistema",
+		"rectangulo"
 	],
 	"name" : "GestorBiblioteca",
 	"type" : "normal"
