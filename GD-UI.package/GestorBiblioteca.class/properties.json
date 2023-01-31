@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "BorderedMorph",
+	"super" : "Ventana",
 	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],

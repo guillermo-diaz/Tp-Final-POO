@@ -45,6 +45,6 @@ botonRegistrarse position: contraseña position + (0@95); borderColor: colorBord
 self addMorph: nombre; addMorph: apellido; addMorph: dni; addMorph: contraseña; addMorph: botonRegistrarse; addMorph: volver.
 
 volver mouseAction: [
-	GestorBiblioteca runWith: sistemaGestor.
 	self owner delete.
-	self delete. ].
+	self delete.
+	GestorBiblioteca runWith: sistemaGestor.].

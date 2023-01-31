@@ -12,3 +12,4 @@ self addBackground; addFigure; addButtons; addTitles.
 
 
 
+

@@ -1,4 +1,4 @@
 as yet unclassified
-titulo: title sistema: system  
+sistema: system  
 sistemaGestor := system.
 ^ (self new) initialize. 
