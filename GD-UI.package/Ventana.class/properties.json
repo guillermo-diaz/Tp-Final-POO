@@ -4,7 +4,9 @@
 	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [ ],
+	"classvars" : [
+		"sistemaGestor"
+	],
 	"instvars" : [ ],
 	"name" : "Ventana",
 	"type" : "normal"

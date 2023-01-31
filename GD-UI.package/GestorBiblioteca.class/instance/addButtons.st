@@ -20,10 +20,15 @@ inContra position: inDni position + (0@80).
 botonLogin position: inContra position + (0@50); borderWidth: 3; borderColor: colorBorde darker.
 botonSignup position: botonLogin position + (100@0); borderWidth: 3; borderColor: colorBorde darker.
 
-botonLogin mouseAction: [  ].
+botonLogin mouseAction: [UserMenu titulo: 'Menu Usuario' sistema: sistema.
+	self owner close.
+	self delete. ].
 botonSignup mouseAction: [
+
 	SignUp titulo: 'Registrarse' sistema: sistema.
-	self owner delete.
-	self delete.].
+	
+	self owner close.
+	self delete
+	].
 
  

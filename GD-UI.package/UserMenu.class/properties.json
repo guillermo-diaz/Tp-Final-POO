@@ -6,15 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"nombre",
-		"apellido",
-		"dni",
-		"contraseña",
-		"botonRegistrarse",
-		"rectangulo",
-		"plus",
-		"volver"
+		"addBiblio",
+		"pedirPrestamo",
+		"devolverPrestamo"
 	],
-	"name" : "SignUp",
+	"name" : "UserMenu",
 	"type" : "normal"
 }

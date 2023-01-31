@@ -1,3 +1,4 @@
 running
-run 
-^ (self new) initialize openInWindowLabeled: 'Gestor de Bibliotecas'
+run
+(self new) initialize openInWindowLabeled: 'Sistema de Bibliotecas'
+

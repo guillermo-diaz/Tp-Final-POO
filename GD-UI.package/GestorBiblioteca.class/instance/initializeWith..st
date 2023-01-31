@@ -1,11 +1,9 @@
 initialization
-initialize  
-
+initializeWith: system  
 
 super initialize. 
-sistema := Sistema new.
+sistema := system.
 self addBackground; addFigure; addButtons; addTitles.
-
 
 
 
