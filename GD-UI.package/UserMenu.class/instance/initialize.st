@@ -1,4 +1,4 @@
 initialization
 initialize 
 super initialize.
-self addButtons .
+self addFigure; addIcon; addButtons; addTitles .

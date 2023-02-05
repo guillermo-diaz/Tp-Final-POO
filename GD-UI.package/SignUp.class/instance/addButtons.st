@@ -12,7 +12,7 @@ fontVolver := (LogicalFont
 
 
 volver label: '←  Atrás' font: fontVolver .
-
+ 
 
 nombre := TextField crearTamaño: 155@30.
 apellido := TextField crearTamaño: 155@30.

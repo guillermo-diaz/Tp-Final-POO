@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ImageMorph",
+	"category" : "GD-UI-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Icon",
+	"type" : "normal"
+}

@@ -6,7 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"stack",
 		"botonLogin",
 		"botonSignup",
 		"botonSistema",

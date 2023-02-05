@@ -8,7 +8,14 @@
 	"instvars" : [
 		"addBiblio",
 		"pedirPrestamo",
-		"devolverPrestamo"
+		"devolverPrestamo",
+		"cambiarTipoUsuario",
+		"menuDes",
+		"rectangulo",
+		"nombre",
+		"apellido",
+		"dni",
+		"plus"
 	],
 	"name" : "UserMenu",
 	"type" : "normal"

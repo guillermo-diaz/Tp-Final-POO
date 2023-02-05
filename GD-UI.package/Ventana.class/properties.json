@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "Morph",
+	"super" : "BorderedMorph",
 	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],

@@ -1,8 +1,8 @@
 adding
 addFigure 
 rectangulo := Morph new.
-	rectangulo  color: (Color r: 193 g: 193 b: 193) ; borderWidth: 4; borderColor: Color gray.
-	rectangulo extent: 300@450.
+	rectangulo  color: self colorShapesAndButtons ; borderWidth: 4; borderColor: self colorBorderShapesAndButtons .
+	rectangulo extent: 300@430.
 	rectangulo center: self center.
-	rectangulo position: rectangulo position + (0@50).
+	rectangulo position: rectangulo position + (0@65).
 	self addMorph: rectangulo .

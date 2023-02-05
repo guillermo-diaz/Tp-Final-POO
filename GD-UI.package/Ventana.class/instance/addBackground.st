@@ -4,7 +4,7 @@ addBackground
 [
     |fondo |
 self color: Color white.
-fondo:=(Form fromFileNamed: 'C:\Users\Guille\Desktop\POO\background11.png') asMorph.
+fondo:=(Form fromFileNamed: 'C:\Users\Guille\Desktop\POO\backgroundPoo2.jpg') asMorph.
 self extent: fondo extent .
 
 	 
