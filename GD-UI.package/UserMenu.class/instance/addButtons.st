@@ -1,6 +1,6 @@
 initialization
 addButtons 
-|col font font2 array cerrarSesion logicalFont cad|
+|col font array |
 font := (LogicalFont
 				 familyName: StandardFonts defaultFont familyName
 				 pointSize: 11.5).
@@ -10,7 +10,9 @@ col := (Color r: 193 g: 193 b: 193).
 
 array := OrderedCollection new.
 
-cerrarSesion := Button nombre: 'Cerrar Sesion'  colour: Color red dimension: 100@30.
+
+botonLogout := Button nombre: ''  colour: Color red dimension: 120@30.
+botonLogout borderWidth: 3; borderColor: (Color r: 156 g: 10 b: 10 range: 255).
 
 addBiblio := Button nombre: 'Bibliotecas de Interés' colour: (self colorShapesAndButtons)  dimension: 200@30 font: font.
 addBiblio color: self colorShapesAndButtons .
@@ -27,10 +29,25 @@ addBiblio position: addBiblio position - (200@60).
 pedirPrestamo position: addBiblio position + (0@80).
 devolverPrestamo position: pedirPrestamo position  + (0@80).
 cambiarTipoUsuario position: devolverPrestamo  position  + (0@80).
-cerrarSesion center: rectangulo center.
-cerrarSesion position: cerrarSesion position + (0@120).
+botonLogout  center: rectangulo center.
+botonLogout  position: botonLogout position + (0@150).
 
-"cerrarSesion font: font2."
 
 array do: [:morph | self addMorph: morph ].
-self addMorph: cerrarSesion.
+self addMorph: botonLogout .
+
+botonLogout mouseAction: [
+	self owner delete.
+	self delete.
+	GestorBiblioteca runWith: sistemaGestor.].
+cambiarTipoUsuario mouseAction: [ 
+	|window morph|
+	self owner delete.
+	self delete.
+	morph := GestorBiblioteca sistema: sistemaGestor.
+	window := morph warningWindow.
+		window position: window position + (250@0).
+
+	morph addMorph: window.
+	morph openInWindowLabeled: 'Sistema de Bibliotecas'
+].

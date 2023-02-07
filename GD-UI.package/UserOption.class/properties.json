@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "ImageMorph",
-	"category" : "GD-UI-Components",
+	"super" : "Ventana",
+	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "Icon",
+	"name" : "UserOption",
 	"type" : "normal"
 }

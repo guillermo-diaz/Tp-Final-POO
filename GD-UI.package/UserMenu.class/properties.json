@@ -15,7 +15,8 @@
 		"nombre",
 		"apellido",
 		"dni",
-		"plus"
+		"plus",
+		"botonLogout"
 	],
 	"name" : "UserMenu",
 	"type" : "normal"

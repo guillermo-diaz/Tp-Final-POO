@@ -48,3 +48,9 @@ volver mouseAction: [
 	self owner delete.
 	self delete.
 	GestorBiblioteca runWith: sistemaGestor.].
+botonRegistrarse mouseAction: [ 
+	|window|
+	window := self warningWindow: 'Usuario Registrado'.
+	window position: window position + (250@0).
+	self addMorph: window.
+	 ]
