@@ -51,3 +51,7 @@ cambiarTipoUsuario mouseAction: [
 	morph addMorph: window.
 	morph openInWindowLabeled: 'Sistema de Bibliotecas'
 ].
+addBiblio mouseAction: [
+	self owner delete.
+	self delete.
+	(AddLibrary user: usuario) openInWindowLabeled: 'Bibliotecas Favoritas'  ].

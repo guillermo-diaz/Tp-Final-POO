@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Ventana",
+	"super" : "UserOption",
 	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"usuario"
+		"volver",
+		"agregar"
 	],
-	"name" : "UserOption",
+	"name" : "AddLibrary",
 	"type" : "normal"
 }

@@ -3,7 +3,7 @@ addIcon
 [ 
 	    |icon |
 	
-		icon := (Form fromFileNamed: 'C:\Users\Guille\Desktop\POO\iconUI3.png') asMorph.
+		icon := (Form fromFileNamed: 'pharo-local/iceberg/Tp-Final-POO/resources/icon.png') asMorph.
 		self addMorph: icon.
 		icon center: rectangulo center.
 		icon position: icon position - (0@100).
