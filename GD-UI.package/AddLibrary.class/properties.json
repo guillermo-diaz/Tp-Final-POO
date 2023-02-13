@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"volver",
-		"agregar"
+		"agregar",
+		"rectangleContainer",
+		"barra"
 	],
 	"name" : "AddLibrary",
 	"type" : "normal"
