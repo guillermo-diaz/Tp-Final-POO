@@ -4,7 +4,8 @@ initialize
 
 super initialize. 
 sistema := Sistema new.
-self addBackground; addFigure; addButtons; addTitles.
+self color: Color transparent;
+ addFigure ; addButtons; addTitles.
 
 
 

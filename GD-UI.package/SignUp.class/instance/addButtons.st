@@ -1,6 +1,6 @@
 initialization
 addButtons  
-|colorBorde fontVolver |
+|colorBorde |
 colorBorde := (Color r: 7 g: 146 b: 93 range: 255) .
 
 
@@ -37,9 +37,10 @@ botonRegistrarse position: contraseña position + (0@95); borderColor: colorBord
 self addMorph: nombre; addMorph: apellido; addMorph: dni; addMorph: contraseña; addMorph: botonRegistrarse; addMorph: volver.
 
 volver mouseAction: [
-	self owner delete.
+	|ow| 
+	ow := self owner.
 	self delete.
-	GestorBiblioteca runWith: sistemaGestor.].
+	ow addMorphCentered: (GestorBiblioteca sistema: sistemaGestor).].
 botonRegistrarse mouseAction: [ 
 	|window|
 	window := self warningWindow: 'Usuario Registrado'.

@@ -22,14 +22,17 @@ botonLogin position: inContra position + (0@50); borderWidth: 3; borderColor: co
 botonSignup position: botonLogin position + (100@0); borderWidth: 3; borderColor: colorBorde darker.
 
 botonLogin mouseAction: [
-	self owner delete.
+	|ow| 
+	ow := self owner.
 	self delete.
-	(UserMenu sistema: sistema) openInWindowLabeled: 'Menu de Usuario'.
+	ow addMorphCentered: (UserMenu sistema: sistemaGestor ).
+	
 ].
 botonSignup mouseAction: [
-	self owner delete.
+	|ow| 
+	ow := self owner.
 	self delete.
-	(SignUp sistema: sistemaGestor )openInWindowLabeled: 'Registro'
+	ow addMorphCentered: (SignUp sistema: sistemaGestor )
 ].
 
  

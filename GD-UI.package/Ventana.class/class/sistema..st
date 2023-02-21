@@ -1,4 +1,3 @@
 as yet unclassified
 sistema: system  
-sistemaGestor := system.
-^ (self new) initialize. 
+^ (self new) initializeWith: system . 

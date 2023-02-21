@@ -1,13 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "BorderedMorph",
+	"super" : "Morph",
 	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
-	"classvars" : [
+	"classvars" : [ ],
+	"instvars" : [
 		"sistemaGestor"
 	],
-	"instvars" : [ ],
 	"name" : "Ventana",
 	"type" : "normal"
 }

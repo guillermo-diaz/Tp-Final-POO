@@ -37,21 +37,23 @@ array do: [:morph | self addMorph: morph ].
 self addMorph: botonLogout .
 
 botonLogout mouseAction: [
-	self owner delete.
+	|ow| 
+	ow := self owner.
 	self delete.
-	GestorBiblioteca runWith: sistemaGestor.].
+	ow addMorphCentered: (GestorBiblioteca sistema: sistemaGestor).].
 cambiarTipoUsuario mouseAction: [ 
-	|window morph|
-	self owner delete.
+	|window morph ow|
+	ow := self owner.
 	self delete.
 	morph := GestorBiblioteca sistema: sistemaGestor.
 	window := morph warningWindow.
-		window position: window position + (250@0).
-
+	window position: window position + (250@0).
 	morph addMorph: window.
-	morph openInWindowLabeled: 'Sistema de Bibliotecas'
+	ow addMorphCentered: morph.
+
 ].
 addBiblio mouseAction: [
-	self owner delete.
+	|ow| 
+	ow := self owner.
 	self delete.
-	(AddLibrary user: usuario) openInWindowLabeled: 'Bibliotecas Favoritas'  ].
+	ow addMorphCentered: (AddLibrary sistema: sistemaGestor )   ].

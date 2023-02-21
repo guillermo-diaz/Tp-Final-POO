@@ -1,0 +1,4 @@
+initialization
+numberOfRows 
+	^elements size.
+    
