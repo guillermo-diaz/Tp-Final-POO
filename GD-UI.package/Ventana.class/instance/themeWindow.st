@@ -1,3 +1,3 @@
 accessing
-theme 
+themeWindow  
 ^ themeWindow 
