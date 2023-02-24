@@ -7,11 +7,11 @@ font := (LogicalFont
 				
 logout := StringMorph contents: 'Cerrar Sesión' font: (LogicalFont
 				 familyName: StandardFonts defaultFont familyName
-				 pointSize: 13). 
+				 pointSize: 13) . 
 logout color: Color white.
 nombre := StringMorph contents: 'Nombre: '. 
 apellido := StringMorph contents: 'Apellido: '.
-dni := StringMorph contents: 'Dni: '.
+dni := StringMorph contents: 'DNI: '.
 
 nombre center: rectangulo center.
 nombre position: nombre position + (-100@0).

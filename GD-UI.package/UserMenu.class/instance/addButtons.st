@@ -1,28 +1,35 @@
 initialization
 addButtons 
-|col font array |
+|col font array nombresBotones|
 font := (LogicalFont
 				 familyName: StandardFonts defaultFont familyName
 				 pointSize: 11.5).
-
+font forceBold.  
 
 col := (Color r: 193 g: 193 b: 193).
 
 array := OrderedCollection new.
 
-
 botonLogout := Button nombre: ''  colour: Color red dimension: 120@30.
 botonLogout borderWidth: 3; borderColor: (Color r: 156 g: 10 b: 10 range: 255).
 
-addBiblio := Button nombre: 'Bibliotecas de Interés' colour: (self colorShapesAndButtons)  dimension: 200@30 font: font.
-addBiblio color: self colorShapesAndButtons .
-pedirPrestamo := Button nombre: 'Pedir Prestamo' colour: (self colorShapesAndButtons) dimension: 200@30 font: font.
-devolverPrestamo := Button nombre: 'Devolver Prestamo' colour: (self colorShapesAndButtons) dimension: 200@30 font: font.
-cambiarTipoUsuario := Button nombre: 'Cambiar Tipo de Usuario' colour: (self colorShapesAndButtons) dimension: 200@30 font: font.
+addBiblio := Button new  color: (self colorButtons); extent: 200@30.
+addBiblio color: self colorButtons .
+pedirPrestamo := Button new color: (self colorButtons); extent: 200@30 .
+devolverPrestamo := Button new color: (self colorButtons); extent: 200@30.
+cambiarTipoUsuario := Button new color: (self colorButtons); extent: 200@30.
 
 array add: addBiblio; add: pedirPrestamo ; add: devolverPrestamo ;add: cambiarTipoUsuario.
+nombresBotones := OrderedCollection new.
+nombresBotones add: (StringMorph contents: 'Bibliotecas de Interes' font: font).
+nombresBotones add: (StringMorph contents: 'Solicitar Prestamo' font: font).
+nombresBotones add: (StringMorph contents: 'Devolver Prestamo' font: font).
+nombresBotones add: (StringMorph contents: 'Cambiar Tipo de Usuario' font: font).
 
-array do: [ :a| a borderWidth: 2; borderColor:  self colorBorderShapesAndButtons ; extent: 300@40].
+nombresBotones do: [ :b| b color: (Color fromString: 'FFFFFF')  ].
+
+array do: [ :a| a label: ''; borderStyle: (Helper getBorderStyle: self colorBorderButtons width: 2)  ; extent: 300@40].
+array do: [ :a | a addMorphCentered: nombresBotones removeFirst].
 
 addBiblio center: self center.
 addBiblio position: addBiblio position - (200@60).

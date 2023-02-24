@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"sistemaGestor"
+		"sistemaGestor",
+		"themeWindow"
 	],
 	"name" : "Ventana",
 	"type" : "normal"

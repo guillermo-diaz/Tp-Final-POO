@@ -2,7 +2,7 @@ as yet unclassified
 warningWindow
 |window cerrar|
 window := BorderedMorph new.
-	window extent: 160@65; color: self colorShapesAndButtons .
+	window extent: 160@65; color: self colorShapes .
 
 	window center: self center.
 

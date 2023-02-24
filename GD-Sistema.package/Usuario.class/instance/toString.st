@@ -1,3 +1,3 @@
 toString
 toString 
-^ nombre,' ', apellido 
+^ ('NOMBRE: ',nombre ,'\APELLIDO: ',apellido ,'\DNI: ',(dni asString)) withCRs

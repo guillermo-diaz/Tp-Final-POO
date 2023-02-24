@@ -1,16 +1,15 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "GD-UI-Components",
+	"category" : "GD-Sistema",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"borderButton",
-		"borderShape",
-		"button",
-		"shape"
+		"nombre",
+		"apellido",
+		"dni"
 	],
-	"name" : "Theme",
+	"name" : "Cliente",
 	"type" : "normal"
 }

@@ -1,7 +1,6 @@
 adding
 addContainerRectangle 
-rectangleContainer := Morph new extent: 400@350.
-rectangleContainer := Helper RoundedRectangleWithSize: 400@350 color: self colorShapesAndButtons  borderColor: self colorBorderShapesAndButtons . 
+rectangleContainer := Helper RoundedRectangleWithSize: 600@350 color: self colorShapes  borderColor: self colorBorderShapes . 
 
 rectangleContainer center: self center; position: rectangleContainer position + (0@50).
 
