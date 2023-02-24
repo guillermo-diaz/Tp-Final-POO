@@ -2,7 +2,7 @@ baselines
 baseline: spec
 	<baseline>
 	spec
-		for: #pharo
+		for: #common
 		do: [
 			"Packages"
 			spec
