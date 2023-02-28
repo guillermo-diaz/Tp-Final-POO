@@ -9,7 +9,9 @@
 		"borderButton",
 		"borderShape",
 		"button",
-		"shape"
+		"shape",
+		"background",
+		"table"
 	],
 	"name" : "Theme",
 	"type" : "normal"

@@ -7,7 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"sistemaGestor",
-		"themeWindow"
+		"theme"
 	],
 	"name" : "Ventana",
 	"type" : "normal"

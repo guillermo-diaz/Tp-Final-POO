@@ -1,6 +1,6 @@
 as yet unclassified
-getString: elem at: column
-column = 'Nombre'	ifTrue: [ ^elem nombre ].
-column = 'Apellido'	ifTrue: [ ^elem apellido ].
-column = 'DNI'		ifTrue: [ ^elem dni ].
+getString: elem at: columnId
+(columnId match:  'Nombre')	ifTrue: [ ^elem nombre ].
+(columnId match: 'Apellido')	ifTrue: [ ^elem apellido ].
+(columnId match:  'DNI')		ifTrue: [ ^elem dni ].
 	^ '...'

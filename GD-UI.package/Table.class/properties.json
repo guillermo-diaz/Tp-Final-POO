@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"doubleClickBlock",
+		"clickBlock"
+	],
 	"name" : "Table",
 	"type" : "normal"
 }

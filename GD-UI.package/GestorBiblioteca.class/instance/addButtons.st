@@ -1,16 +1,21 @@
 initialization
 addButtons  
 
-|colorBorde |
+|colorBorde text|
 
 colorBorde := (Color r: 7 g: 146 b: 93 range: 255) .
 
 botonLogin := Button nombre: 'Log in' colour: Color green  dimension: 55@25. 
 botonSignup := Button nombre: 'Sign up' colour: Color green dimension:55@25.
-inDni := TextField crearTamaño: 155@100 . 
+"inDni := TextField crearTamaño: 155@100 . 
 inContra := TextField crearTamaño: 155@100.
 inDni ghostText: 'Ingrese el DNI'.  
-inContra ghostText: 'Ingrese la contraseña'.
+inContra ghostText: 'Ingrese la contraseña'."
+inDni := TextField transparentExtent: 155@100. 
+inContra := TextField transparentExtent: 155@100. 
+inDni borderColor: self colorBorderShapes.
+inContra borderColor: self colorBorderShapes.
+
 
 
 
@@ -22,10 +27,12 @@ botonLogin position: inContra position + (0@50); borderWidth: 3; borderColor: co
 botonSignup position: botonLogin position + (100@0); borderWidth: 3; borderColor: colorBorde darker.
 
 botonLogin mouseAction: [
-	|ow| 
+	|ow user| 
 	ow := self owner.
 	self delete.
-	ow addMorphCentered: (UserMenu sistema: sistemaGestor ).
+	user := (Usuario crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 123).
+user addBiblioteca:  (Biblioteca ide: 1 direccion: 'Perito Moreno' nombre: 'Biblio 1' telefono: '123214123' representante: 'Yo').
+	ow addMorphCentered: (UserMenu sistema: sistemaGestor user: user) .
 	
 ].
 botonSignup mouseAction: [

@@ -4,7 +4,7 @@ addBackground
 [
     |fondo |
 self color: Color white.
-fondo:=(Form fromFileNamed: 'pharo-local/iceberg/Tp-Final-POO/resources/background3.jpg') asMorph.
+fondo:=(Form fromFileNamed: theme background) asMorph.
 fondo center: self center.
 	 
 	self addMorphBack: fondo.

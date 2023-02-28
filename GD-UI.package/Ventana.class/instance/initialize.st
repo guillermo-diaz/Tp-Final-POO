@@ -3,7 +3,7 @@ initialize
 
 super initialize .
 self extent: 800@600.
-themeWindow := Theme newGreen. 
+theme := Theme new pastel. 
 
 
 

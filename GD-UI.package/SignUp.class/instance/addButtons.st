@@ -5,14 +5,27 @@ colorBorde := (Color r: 7 g: 146 b: 93 range: 255) .
 
 
 volver := self getButtonReturn.
- 
-nombre := TextField crearTamaño: 155@30.
+
+nombre := TextField transparentExtent: 155@30.
+apellido := TextField transparentExtent: 155@30.
+dni := TextField transparentExtent: 155@30.
+contraseña := TextField transparentExtent: 155@30.
+plus := Checkbox nombre: 'Plus' tamaño: 50@30.
+
+nombre borderColor: self colorBorderShapes. 
+apellido borderColor: self colorBorderShapes.
+dni borderColor: self colorBorderShapes.
+contraseña borderColor: self colorBorderShapes.
+
+"nombre := TextField crearTamaño: 155@30.
 apellido := TextField crearTamaño: 155@30.
 dni := TextField crearTamaño: 155@30.
 contraseña := TextField crearTamaño: 155@30.
-plus := Checkbox nombre: 'Plus' tamaño: 50@30.
+plus := Checkbox nombre: 'Plus' tamaño: 50@30."
 
-"nombre color: rectangulo color; borderWidth: 0. " 
+
+
+
 botonRegistrarse := Button nombre: 'Registrarse' colour: Color green dimension: 155@30.
 self addMorph: plus.
 plus font: ((LogicalFont
@@ -37,6 +50,7 @@ botonRegistrarse position: contraseña position + (0@95); borderColor: colorBord
 
 
 self addMorph: nombre; addMorph: apellido; addMorph: dni; addMorph: contraseña; addMorph: botonRegistrarse; addMorph: volver.
+
 
 volver mouseAction: [
 	|ow| 

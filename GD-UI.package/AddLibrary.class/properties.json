@@ -9,7 +9,8 @@
 		"volver",
 		"agregar",
 		"rectangleContainer",
-		"barra"
+		"barra",
+		"table"
 	],
 	"name" : "AddLibrary",
 	"type" : "normal"

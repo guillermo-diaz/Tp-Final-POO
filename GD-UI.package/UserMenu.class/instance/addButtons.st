@@ -26,7 +26,7 @@ nombresBotones add: (StringMorph contents: 'Solicitar Prestamo' font: font).
 nombresBotones add: (StringMorph contents: 'Devolver Prestamo' font: font).
 nombresBotones add: (StringMorph contents: 'Cambiar Tipo de Usuario' font: font).
 
-nombresBotones do: [ :b| b color: (Color fromString: 'FFFFFF')  ].
+nombresBotones do: [ :b| b color: (Color black)  ].
 
 array do: [ :a| a label: ''; borderStyle: (Helper getBorderStyle: self colorBorderButtons width: 2)  ; extent: 300@40].
 array do: [ :a | a addMorphCentered: nombresBotones removeFirst].
@@ -42,6 +42,7 @@ botonLogout  position: botonLogout position + (0@150).
 
 array do: [:morph | self addMorph: morph ].
 self addMorph: botonLogout .
+
 
 botonLogout mouseAction: [
 	|ow| 
