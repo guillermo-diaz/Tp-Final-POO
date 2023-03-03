@@ -48,12 +48,12 @@ botonLogout mouseAction: [
 	|ow| 
 	ow := self owner.
 	self delete.
-	ow addMorphCentered: (GestorBiblioteca sistema: sistemaGestor).].
+	ow addMorphCentered: (Login sistema: sistemaGestor).].
 cambiarTipoUsuario mouseAction: [ 
 	|window morph ow|
 	ow := self owner.
 	self delete.
-	morph := GestorBiblioteca sistema: sistemaGestor.
+	morph := Login sistema: sistemaGestor.
 	window := morph warningWindow.
 	window position: window position + (250@0).
 	morph addMorph: window.
@@ -64,4 +64,16 @@ addBiblio mouseAction: [
 	|ow| 
 	ow := self owner.
 	self delete.
-	ow addMorphCentered: (AddLibrary sistema: sistemaGestor )   ].
+	ow addMorphCentered: (AddLibrary sistema: sistemaGestor user: usuario)   ].
+pedirPrestamo mouseAction: [ 
+	|ow| 
+	ow := self owner.
+	self delete.
+	ow addMorphCentered: (PedirPrestamo sistema: sistemaGestor user: usuario) 
+	 ].
+devolverPrestamo mouseAction: [ 
+	|ow| 
+	ow := self owner.
+	self delete.
+	ow addMorphCentered: (DevolverPrestamo sistema: sistemaGestor user: usuario) 
+	 ]
