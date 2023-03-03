@@ -56,7 +56,7 @@ volver mouseAction: [
 	|ow| 
 	ow := self owner.
 	self delete.
-	ow addMorphCentered: (GestorBiblioteca sistema: sistemaGestor).].
+	ow addMorphCentered: (Login sistema: sistemaGestor).].
 botonRegistrarse mouseAction: [ 
 	|window|
 	window := self warningWindow: 'Usuario Registrado'.

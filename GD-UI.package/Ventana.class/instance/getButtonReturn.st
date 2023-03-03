@@ -7,4 +7,5 @@ fontVolver := (LogicalFont
 				 familyName: StandardFonts defaultFont familyName
 				 pointSize: 13).
 				volver label: '←  Atrás' font: fontVolver .
+				volver bottom: self bottom -15 ; left: self left +30.
 ^ volver
