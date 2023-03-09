@@ -11,7 +11,10 @@
 		"button",
 		"shape",
 		"background",
-		"table"
+		"table",
+		"header",
+		"headerLine",
+		"icon"
 	],
 	"name" : "Theme",
 	"type" : "normal"

@@ -12,7 +12,8 @@
 		"inDni",
 		"inContra",
 		"sistema",
-		"rectangulo"
+		"rectangulo",
+		"volver"
 	],
 	"name" : "Login",
 	"type" : "normal"

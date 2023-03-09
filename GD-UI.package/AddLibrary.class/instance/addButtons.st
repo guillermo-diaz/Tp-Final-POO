@@ -18,4 +18,8 @@ volver mouseAction: [
 	ow := self owner.
 	self delete.
 	ow addMorphCentered: (UserMenu sistema: sistemaGestor user: usuario )
-	 ]
+	 ].
+agregar mouseAction: [ 
+	usuario addBiblioteca:  (Biblioteca ide: 1 direccion: 'Perito Moreno' nombre: 'Biblio 1' telefono: '123214123' representante: 'Yo').
+	usuario changed.
+	 ] 

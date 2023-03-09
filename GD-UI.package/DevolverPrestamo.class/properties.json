@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"volver"
+		"volver",
+		"rectangulo",
+		"table"
 	],
 	"name" : "DevolverPrestamo",
 	"type" : "normal"

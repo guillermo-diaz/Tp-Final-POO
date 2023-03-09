@@ -5,6 +5,7 @@ col := OrderedCollection new.
 font := (LogicalFont
 				 familyName: StandardFonts defaultFont familyName
 				 pointSize: 10.5).
+				
 title1 := StringMorph contents: 'Nombre'.
 title2 := StringMorph contents: 'Apellido'.
 title3 := StringMorph contents: 'DNI'.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ModelTableDataSource",
+	"category" : "GD-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ModelPrestamo",
+	"type" : "normal"
+}

@@ -1,4 +1,3 @@
 as yet unclassified
 colorBorderButtons 
 ^ theme  borderButton 
-"(Color r: 207 g: 207 b: 207 range: 255)"

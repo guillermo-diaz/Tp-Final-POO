@@ -1,15 +1,15 @@
 {
 	"commentStamp" : "",
-	"super" : "UserOption",
+	"super" : "Ventana",
 	"category" : "GD-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"volver",
-		"table",
-		"rectangulo"
+		"verSistema",
+		"usuario",
+		"banner"
 	],
-	"name" : "PedirPrestamo",
+	"name" : "Home",
 	"type" : "normal"
 }

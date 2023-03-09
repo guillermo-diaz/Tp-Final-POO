@@ -1,22 +1,28 @@
 adding
 addTitles 
-|font logout|
-font := (LogicalFont
-				 familyName: StandardFonts defaultFont familyName
-				 pointSize: 14).
+|font logout name surname d|
+font := Helper getFontWithSize: 14.
 				
-logout := StringMorph contents: 'Cerrar Sesión' font: (LogicalFont
-				 familyName: StandardFonts defaultFont familyName
-				 pointSize: 13) . 
+logout := StringMorph contents: 'Cerrar Sesión' font: ((Helper getFontWithSize: 13) weightValue: 800). 
 logout color: Color white.
-nombre := StringMorph contents: 'Nombre: '. 
-apellido := StringMorph contents: 'Apellido: '.
-dni := StringMorph contents: 'DNI: '.
+name := 'Nombre:  '.
+surname := 'Apellido:  '.
+d := 'DNI:  '.
 
-nombre center: rectangulo center.
-nombre position: nombre position + (-100@0).
-apellido position: nombre position + (0@40).
-dni position: apellido position + (0@40).
+"en caso de que se abra sin usuario no va a mostrar nada "
+usuario ifNotNil: [ 
+	name := name , usuario nombre.
+	surname := surname, usuario apellido .
+	d := d, usuario dni asString].
+
+nombre := StringMorph contents: name. 
+apellido := StringMorph contents: surname.
+dni := StringMorph contents: d.
+
+
+nombre center: rectangulo center; left: rectangulo left + 30.
+apellido top: nombre bottom + 25; left: rectangulo left + 30.
+dni top: apellido  bottom + 25; left: rectangulo left + 30.
 logout center: botonLogout center.
 
 nombre font: font.

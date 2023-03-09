@@ -4,7 +4,7 @@ addButtons
 font := (LogicalFont
 				 familyName: StandardFonts defaultFont familyName
 				 pointSize: 11.5).
-font forceBold.  
+font weightValue: 800.  
 
 col := (Color r: 193 g: 193 b: 193).
 

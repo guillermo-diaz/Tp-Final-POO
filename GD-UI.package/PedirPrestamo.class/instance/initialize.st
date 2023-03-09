@@ -1,4 +1,4 @@
 initialization
 initialize 
 super initialize.
-self color: Color transparent; addButtons; addFigure
+self color: Color transparent; addFigure;addButtons; addTable; addTitles

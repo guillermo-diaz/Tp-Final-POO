@@ -40,7 +40,6 @@ apellido position: nombre position +(0@65).
 dni position: apellido position + (0@65).
 contraseña position: dni position + (0@65).
 plus position: contraseña position + (0@60).
-volver position: self bottomLeft - (-20@40).
 botonRegistrarse position: contraseña position + (0@95); borderColor: colorBorde darker; borderWidth: 3.
 
 
