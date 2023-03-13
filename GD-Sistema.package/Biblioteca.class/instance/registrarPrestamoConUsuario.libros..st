@@ -25,3 +25,7 @@ registrarPrestamoConUsuario: usuario libros: libros
 	 ]] ifTrue: [ ^false ].
 ^ true
 
+"tengo que corregir esto después" 
+
+
+

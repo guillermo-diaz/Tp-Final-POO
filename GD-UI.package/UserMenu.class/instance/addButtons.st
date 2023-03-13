@@ -64,7 +64,7 @@ addBiblio mouseAction: [
 	|ow| 
 	ow := self owner.
 	self delete.
-	ow addMorphCentered: (AddLibrary sistema: sistemaGestor user: usuario)   ].
+	ow addMorphCentered: (BibliotecasInteres sistema: sistemaGestor user: usuario)   ].
 pedirPrestamo mouseAction: [ 
 	|ow| 
 	ow := self owner.
