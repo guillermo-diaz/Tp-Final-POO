@@ -8,7 +8,10 @@
 	"instvars" : [
 		"volver",
 		"rectangulo",
-		"table"
+		"table",
+		"panelInfo",
+		"devolverLibros",
+		"devolverAudiolibros"
 	],
 	"name" : "DevolverPrestamo",
 	"type" : "normal"

@@ -23,11 +23,19 @@ botonLogin position: inContra position + (0@50); borderWidth: 3; borderColor: co
 botonSignup position: botonLogin position + (100@0); borderWidth: 3; borderColor: colorBorde darker.
 
 botonLogin mouseAction: [
-	|ow user| 
+	|ow user biblio libro colLibros| 
+	colLibros := OrderedCollection new.
+	biblio := (Biblioteca ide: 1 direccion: 'Perito Moreno' nombre: 'Biblioteca 1' telefono: '123214123' representante: 'Yo').
+	libro := (Libro crearLibroNombre: 'Steel Ball Run' editorial: 'Ivrea' añoEdicion: 2004 autores: (OrderedCollection new)).
+	biblio addLibro: libro.
+	colLibros add: libro.
+	
+	
 	ow := self owner.
 	self delete.
-	user := (Usuario crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 123).
-user addBiblioteca:  (Biblioteca ide: 1 direccion: 'Perito Moreno' nombre: 'Biblioteca 1' telefono: '123214123' representante: 'Yo').
+	user := (UsuarioPlus  crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 123).
+user addBiblioteca: biblio .
+biblio registrarPrestamoConUsuario: user libros: colLibros.
 	ow addMorphCentered: (UserMenu sistema: sistemaGestor user: user) .
 	
 ].

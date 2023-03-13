@@ -1,11 +1,18 @@
 adding
 addTable 
 
-usuario ifNotNil: [  
-table := Table aModel: (ModelBiblioteca aCollection: usuario bibliotecasInteres) aColumns: #('Nombre'  'Dirección') asOrderedCollection  extent: 300@280. 
-table headerColor: theme shape.
-" 'Fecha inicio' 'Fecha Limite' 'Atrasado'"
+usuario ifNotNil: [   
+table := self tablaBibliotecasInteres: 200@280 columns: #(Nombre). 
+table headerColor: self colorShapes.
 
-table center: rectangulo center; bottom: rectangulo bottom  - 20.
+table left: rectangulo left + 30 ; top: rectangulo top  + 30.
 
-rectangulo addMorph: table . ]
+rectangulo addMorph: table . 
+table setClick: [:index | 
+	|prest|
+	prest := ''. 
+	((table elementAt: index) prestamosActivosDe: usuario) do: [ :prestamo| prest := prest, prestamo toString].
+	
+	panelInfo setText: prest.
+	]
+].

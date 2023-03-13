@@ -10,4 +10,5 @@ table := Color gray.
 header := Color fromString: 'ffc198'.
 headerLine := Color fromString: '57442e'.
 icon := Color fromString: '674935'.
+contrast := Color fromString: 'FDEEB2'
 
