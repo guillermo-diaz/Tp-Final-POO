@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "ModelTableDataSource",
+	"category" : "TP-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ModelUserList",
+	"type" : "normal"
+}

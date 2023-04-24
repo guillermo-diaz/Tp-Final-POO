@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"botonLogin",
+		"botonSignup",
+		"botonSistema",
+		"inDni",
+		"inContra",
+		"sistema",
+		"rectangulo",
+		"volver"
+	],
+	"name" : "Login",
+	"type" : "normal"
+}

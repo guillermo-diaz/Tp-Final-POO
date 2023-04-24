@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TP-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"usuario",
+		"colLibros",
+		"fechaRegistro",
+		"fechaEntrega",
+		"fechaMax"
+	],
+	"name" : "Prestamo",
+	"type" : "normal"
+}

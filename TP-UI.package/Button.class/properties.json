@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "SimpleButtonMorph",
+	"category" : "TP-UI-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bloque"
+	],
+	"name" : "Button",
+	"type" : "normal"
+}

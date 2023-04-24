@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"nombre",
+		"apellido",
+		"dni",
+		"contraseña",
+		"botonRegistrarse",
+		"rectangulo",
+		"plus",
+		"volver"
+	],
+	"name" : "SignUp",
+	"type" : "normal"
+}

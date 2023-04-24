@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TP-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colBibliotecas",
+		"nombre",
+		"apellido",
+		"dni",
+		"contraseña",
+		"diasSuspendido"
+	],
+	"name" : "Usuario",
+	"type" : "normal"
+}

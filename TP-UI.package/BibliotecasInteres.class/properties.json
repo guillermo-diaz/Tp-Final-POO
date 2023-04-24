@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "UserOption",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"volver",
+		"agregar",
+		"rectangleContainer",
+		"barra",
+		"table"
+	],
+	"name" : "BibliotecasInteres",
+	"type" : "normal"
+}

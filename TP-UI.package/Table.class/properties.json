@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "FTTableMorph",
+	"category" : "TP-UI-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"doubleClickBlock",
+		"clickBlock"
+	],
+	"name" : "Table",
+	"type" : "normal"
+}

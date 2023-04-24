@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "FTSimpleDataSource",
+	"category" : "TP-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "ModelTableDataSource",
+	"type" : "normal"
+}

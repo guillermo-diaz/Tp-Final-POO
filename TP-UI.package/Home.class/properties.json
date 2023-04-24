@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"verSistema",
+		"usuario",
+		"banner"
+	],
+	"name" : "Home",
+	"type" : "normal"
+}

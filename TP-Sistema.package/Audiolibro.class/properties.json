@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Libro",
+	"category" : "TP-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "Audiolibro",
+	"type" : "normal"
+}

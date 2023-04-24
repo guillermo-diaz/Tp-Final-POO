@@ -1,0 +1,23 @@
+{
+	"commentStamp" : "",
+	"super" : "UserOption",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"addBiblio",
+		"pedirPrestamo",
+		"devolverPrestamo",
+		"cambiarTipoUsuario",
+		"menuDes",
+		"rectangulo",
+		"nombre",
+		"apellido",
+		"dni",
+		"plus",
+		"botonLogout"
+	],
+	"name" : "UserMenu",
+	"type" : "normal"
+}

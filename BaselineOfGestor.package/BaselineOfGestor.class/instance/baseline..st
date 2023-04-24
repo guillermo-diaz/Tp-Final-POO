@@ -6,5 +6,5 @@ baseline: spec
 		do: [
 			"Packages"
 			spec
-				package: 'GD-UI';
-				package: 'GD-Sistema']
+				package: 'TP-UI';
+				package: 'TP-Sistema']

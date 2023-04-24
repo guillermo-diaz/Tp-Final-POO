@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "UserOption",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"volver",
+		"rectangulo",
+		"table",
+		"panelInfo",
+		"devolverLibros",
+		"devolverAudiolibros"
+	],
+	"name" : "DevolverPrestamo",
+	"type" : "normal"
+}

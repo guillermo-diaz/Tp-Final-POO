@@ -1,0 +1,22 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TP-UI-Components",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"borderButton",
+		"borderShape",
+		"button",
+		"shape",
+		"background",
+		"table",
+		"header",
+		"headerLine",
+		"icon",
+		"contrast"
+	],
+	"name" : "Theme",
+	"type" : "normal"
+}

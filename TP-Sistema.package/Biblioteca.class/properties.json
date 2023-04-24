@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "TP-Sistema",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"colLibros",
+		"colPrestamos",
+		"identificador",
+		"direccion",
+		"nombre",
+		"telefono",
+		"representante",
+		"diasPrestamos"
+	],
+	"name" : "Biblioteca",
+	"type" : "normal"
+}
