@@ -5,8 +5,8 @@ addIcon
 	
 		icon := (Form fromFileNamed: Theme icon) asMorph.
 		self addMorph: icon.
-		icon center: rectangulo center.
-		icon position: icon position - (0@100).
+		icon center: panelUser center; top: panelUser top + 20.
+		
 		
 ]on: FileDoesNotExistException  do: [ :ex |
     	| circle head body |
@@ -25,7 +25,7 @@ circle addMorph: body.
 	
 	
 	
-	circle center: rectangulo  center.
+	circle center: panelUser   center.
 	circle position: circle position - (0@100).
 	self addMorph: circle.
 	

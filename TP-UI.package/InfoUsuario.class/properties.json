@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"panelUser",
+		"tableUsers",
+		"containerPrestamos",
+		"panelPrestamos",
+		"volver",
+		"nombre",
+		"apellido",
+		"dni",
+		"userActual"
+	],
+	"name" : "InfoUsuario",
+	"type" : "normal"
+}

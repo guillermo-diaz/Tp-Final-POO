@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Ventana",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"volver",
+		"rectangulo",
+		"tableBibliotecas",
+		"detalleBiblioteca",
+		"usuarios"
+	],
+	"name" : "InfoBiblioteca",
+	"type" : "normal"
+}

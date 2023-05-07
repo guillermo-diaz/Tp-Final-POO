@@ -8,7 +8,7 @@ devolverAudiolibros := Button stringMorphText: (StringMorph contents: 'Devolver 
 devolverLibros rounded.
 devolverAudiolibros rounded.
 
-devolverLibros top: panelInfo bottom + 10; left: panelInfo left.
+devolverLibros top: panelInfo bottom + 15; left: panelInfo left.
 devolverAudiolibros top: devolverLibros top; right: panelInfo right.
 
 self addMorph: volver; addMorph: devolverLibros; addMorph: devolverAudiolibros. 

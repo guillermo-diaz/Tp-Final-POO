@@ -8,7 +8,9 @@
 	"instvars" : [
 		"borderButton",
 		"borderShape",
+		"panel",
 		"button",
+		"button2",
 		"shape",
 		"background",
 		"table",

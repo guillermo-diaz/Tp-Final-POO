@@ -15,4 +15,10 @@ usuario mouseAction: [
 	|ow| 
 	ow := self owner.
 	self delete.
-	ow addMorphCentered: (Login sistema: sistemaGestor ) ]
+	ow addMorphCentered: (Login sistema: sistemaGestor ) ].
+verSistema mouseAction: [ 
+	|ow| 
+	ow := self owner.
+	self delete.
+	ow addMorphCentered: (InfoBiblioteca sistema: sistemaGestor)
+	 ].

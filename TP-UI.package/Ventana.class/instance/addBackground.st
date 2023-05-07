@@ -3,7 +3,7 @@ addBackground
  self color: Color white.
 [
     |fondo |
-
+ 
 fondo:=(Form fromFileNamed: theme background) asMorph.
 fondo top: self top; left: self left.
 	

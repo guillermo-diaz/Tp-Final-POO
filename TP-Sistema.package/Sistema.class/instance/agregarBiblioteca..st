@@ -1,3 +1,6 @@
 bibliotecas
 agregarBiblioteca: biblio
-(self existeBiblioteca: biblio) ifTrue: [ colBibliotecas := colBibliotecas add: biblio. ^ true ] ifFalse: [^ false ].
+(self existeBiblioteca: biblio) ifFalse:  [colBibliotecas add: biblio.
+	self changed: colBibliotecas.
+	 ^ true ].
+^ false

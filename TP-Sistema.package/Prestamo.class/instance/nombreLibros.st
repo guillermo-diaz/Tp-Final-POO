@@ -1,8 +1,10 @@
 printing
 nombreLibros 
 |libros| 
-libros := ' '.
-colLibros do: [ :libro | libros := libros, libro nombre,'\ ' withCRs.].
+libros := ''.
+
+colLibros do: [ :libro | libros := libros,'\ - ', libro toString withCRs.].
+
 ^ libros 
 
 
