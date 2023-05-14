@@ -27,6 +27,14 @@ usuarios mouseAction: [
 	ow := self owner.
 	self delete.
 	ow addMorphCentered: (InfoUsuario sistema: sistemaGestor )
+	 ].
+detalleBiblioteca mouseAction: [ 
+	biblioteca ifNotNil: [ 
+		|ow|
+		ow := self owner.
+		self delete.
+		ow addMorphCentered: (BibliotecaDetalle sistema: sistemaGestor  biblioteca: biblioteca ).
+		 ]
 	 ]
 
 

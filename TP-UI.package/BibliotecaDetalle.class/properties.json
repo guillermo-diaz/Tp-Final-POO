@@ -7,12 +7,16 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"volver",
+		"biblioteca",
+		"containerInfo",
 		"rectangulo",
-		"tableBibliotecas",
-		"detalleBiblioteca",
-		"usuarios",
-		"biblioteca"
+		"panelPrestamos",
+		"nombre",
+		"direccion",
+		"telefono",
+		"representante",
+		"verLibros"
 	],
-	"name" : "InfoBiblioteca",
+	"name" : "BibliotecaDetalle",
 	"type" : "normal"
 }

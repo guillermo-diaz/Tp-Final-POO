@@ -8,5 +8,10 @@ tableBibliotecas := Table aModel: (ModelBiblioteca aCollection: bibliotecas) aCo
 tableBibliotecas headerColor: self colorShapes.
 
 tableBibliotecas left: rectangulo left + 30; top: rectangulo top +35.
-rectangulo addMorph: tableBibliotecas.]
+rectangulo addMorph: tableBibliotecas.
+
+tableBibliotecas setClick: [:index | 
+	biblioteca  := (tableBibliotecas elementAt: index).
+	 ]
+]
 

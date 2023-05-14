@@ -3,7 +3,7 @@ addIcon
 [ 
 	    |icon |
 	
-		icon := (Form fromFileNamed: Theme icon) asMorph.
+		icon := (Form fromFileNamed: theme icon) asMorph.
 		self addMorph: icon.
 		icon center: panelUser center; top: panelUser top + 20.
 		
@@ -11,7 +11,7 @@ addIcon
 ]on: FileDoesNotExistException  do: [ :ex |
     	| circle head body |
 circle := EllipseMorph new extent: 130@130.
-circle color: Color veryDarkGray lighter lighter; borderWidth: 4.
+circle color: Color veryDarkGray lighter lighter; borderWidth: 3.
 
 head := EllipseMorph new extent: 50@50; color: Color black.
 head center: circle center.

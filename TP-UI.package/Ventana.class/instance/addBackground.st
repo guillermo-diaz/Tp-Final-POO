@@ -20,7 +20,7 @@ lineHeader := Morph new color: theme headerLine; extent: 800@13.
 lineHeader left: header left; bottom: header bottom.
 header addMorph: lineHeader.
 icon := EllipseMorph new.
-icon extent: 102@103; color: theme icon.
+icon extent: 102@103; color: theme iconColor.
 icon left: header left + 10; top: header top +5. 
 
 
