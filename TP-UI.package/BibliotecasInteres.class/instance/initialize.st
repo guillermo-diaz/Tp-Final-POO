@@ -1,5 +1,5 @@
 initialization
 initialize  
 super initialize.
-self color: Color transparent; addContainerRectangle ;addBar; addButtons; addTable .
+self addContainerRectangle ;addBar; addButtons; addTable .
 

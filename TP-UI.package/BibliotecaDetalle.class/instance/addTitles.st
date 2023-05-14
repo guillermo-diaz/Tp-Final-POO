@@ -24,7 +24,7 @@ telefono := StringMorph contents: tel font: font.
 representante := StringMorph contents: repre font: font.
 prestamos := StringMorph contents: 'Prestamos' font: ((Helper getFontWithSize: 13) forceBold ).
 
-representante  left: containerInfo left + 20; bottom: verLibros top - 30.
+representante  left: containerInfo left + 20; bottom: verLibros top - 30. 
 telefono left: representante left; bottom: representante top - 30.
 direccion left: telefono left; bottom: telefono top - 30.
 nombre left: direccion left; bottom: direccion top - 30.

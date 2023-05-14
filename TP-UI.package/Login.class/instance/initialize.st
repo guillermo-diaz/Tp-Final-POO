@@ -3,7 +3,7 @@ initialize
 
 
 super initialize. 
-self color: Color transparent;
+self 
  addFigure ; addButtons; addTitles.
 
 

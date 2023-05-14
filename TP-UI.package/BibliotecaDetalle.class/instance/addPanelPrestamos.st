@@ -1,9 +1,10 @@
 adding
 addPanelPrestamos  
-panelPrestamos  := ScrolledText roundedWithSize: 250@320 color: theme contrast .
+panelPrestamos  := ScrolledText roundedWithSize: 250@330 color: theme contrast .
 panelPrestamos  beReadOnly.
-panelPrestamos  right:  rectangulo  right - 15; bottom: rectangulo bottom - 20.
+panelPrestamos  right:  rectangulo  right - 15; bottom: rectangulo bottom - 15.
 panelPrestamos  wrapFlag: true.
+
 
 
 

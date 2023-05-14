@@ -1,21 +1,17 @@
 {
 	"commentStamp" : "",
-	"super" : "Ventana",
+	"super" : "BibliotecaOption",
 	"category" : "TP-UI-Views",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"volver",
-		"biblioteca",
 		"rectangulo",
 		"tableLibros",
-		"inputNombre",
-		"inputEditorial",
-		"inputAño",
-		"inputAutores",
 		"agregarLibro",
-		"eliminarLibro"
+		"eliminarLibro",
+		"selectedLibro"
 	],
 	"name" : "InfoLibro",
 	"type" : "normal"

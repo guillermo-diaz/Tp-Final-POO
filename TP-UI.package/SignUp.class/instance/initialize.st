@@ -3,5 +3,5 @@ initialize
 
 super initialize .
 
-self color: Color transparent; addFigure; addButtons; addTitles  .
+self addFigure; addButtons; addTitles  .
 

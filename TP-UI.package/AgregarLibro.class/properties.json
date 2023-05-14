@@ -7,15 +7,17 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"volver",
-		"containerInfo",
 		"rectangulo",
-		"panelPrestamos",
-		"nombre",
-		"direccion",
-		"telefono",
-		"representante",
-		"verLibros"
+		"panelAutores",
+		"inputNombre",
+		"inputEditorial",
+		"inputAño",
+		"inputAutores",
+		"audiolibro",
+		"agregarLibro",
+		"agregarAutor",
+		"colAutores"
 	],
-	"name" : "BibliotecaDetalle",
+	"name" : "AgregarLibro",
 	"type" : "normal"
 }
