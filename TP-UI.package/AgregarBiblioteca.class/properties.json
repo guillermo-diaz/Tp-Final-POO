@@ -8,12 +8,14 @@
 	"instvars" : [
 		"volver",
 		"rectangulo",
-		"tableBibliotecas",
-		"detalleBiblioteca",
-		"agregarBiblioteca",
-		"usuarios",
-		"biblioteca"
+		"inputNombre",
+		"inputIde",
+		"inputDireccion",
+		"inputTelefono",
+		"inputRepresentante",
+		"diasPrestamos",
+		"registrar"
 	],
-	"name" : "InfoBiblioteca",
+	"name" : "AgregarBiblioteca",
 	"type" : "normal"
 }

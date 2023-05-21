@@ -14,8 +14,8 @@ autores2 add: (Autor crearAutorNombre: 'Naoki Urasawa').
 autores3 add: (Autor crearAutorNombre: 'Kentaro Miura').
 autores3 add: (Autor crearAutorNombre: 'Kouji Mori').
 user := (Usuario crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 123).
-	biblio := (Biblioteca ide: 1 direccion: 'Perito Moreno' nombre: 'Biblioteca 1' telefono: '123214123' representante: 'Yo').
-	biblio2 := (Biblioteca ide: 2 direccion: 'Cumelen' nombre: 'Biblioteca 2' telefono: '123555523' representante: 'Yo').
+	biblio := (Biblioteca ide: '1' direccion: 'Perito Moreno' nombre: 'Biblioteca 1' telefono: '123214123' representante: 'Yo').
+	biblio2 := (Biblioteca ide: '2' direccion: 'Cumelen' nombre: 'Biblioteca 2' telefono: '123555523' representante: 'Yo').
 	libro3 := (Libro crearLibroNombre: '20th Century Boys' editorial: 'Ivrea' añoEdicion: 1900 autores: autores2 ).
 	libro := (Libro crearLibroNombre: 'Steel Ball Run' editorial: 'Ivrea' añoEdicion: 2004 autores: autores ).
 	libro2 := (Libro crearLibroNombre: 'Berserk' editorial: 'Ivrea' añoEdicion: 2004 autores: autores3 ).

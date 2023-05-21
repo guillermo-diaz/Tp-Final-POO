@@ -2,7 +2,7 @@ as yet unclassified
 warningWindow: aName
 |window cerrar nombre|
 window := BorderedMorph new.
-	window extent: 160@65; color: self colorShapes.
+	window extent: 160@65; color: self colorShapes;borderWidth: 2 ; borderColor: self colorBorderShapes .
 	
 	nombre := StringMorph contents: aName.
 	

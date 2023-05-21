@@ -7,13 +7,16 @@ detalleBiblioteca := Button stringMorphText: (StringMorph contents: 'Ver Detalle
 usuarios := Button stringMorphText: (StringMorph contents: 'Ver Usuarios' font: font) color: self colorButtons extent: 105@30.
 detalleBiblioteca borderColor: self colorButtons; rounded .
 usuarios borderColor: self colorButtons; rounded.
+agregarBiblioteca := Button stringMorphText: (StringMorph contents: 'Agregar Biblioteca' font: font) color: self colorButtons extent: 120@30.
+agregarBiblioteca rounded.
 
 detalleBiblioteca left: rectangulo left + 30; bottom: rectangulo bottom - 15.
 usuarios right: rectangulo right -30; bottom: rectangulo bottom -15.
+agregarBiblioteca top: detalleBiblioteca top; left: detalleBiblioteca right + 20.
 
 
 self addMorph: volver.
-rectangulo addMorph: detalleBiblioteca; addMorph: usuarios.
+rectangulo addMorph: detalleBiblioteca; addMorph: usuarios; addMorph: agregarBiblioteca.
 
 
 volver mouseAction: [ 
@@ -35,7 +38,15 @@ detalleBiblioteca mouseAction: [
 		self delete.
 		ow addMorphCentered: (BibliotecaDetalle sistema: sistemaGestor  biblioteca: biblioteca ).
 		 ]
-	 ]
+	 ].
+
+agregarBiblioteca mouseAction: [ 
+	|ow|
+		ow := self owner.
+		self delete.
+		ow addMorphCentered: (AgregarBiblioteca sistema: sistemaGestor).
+		 ]
+	
 
 
 
