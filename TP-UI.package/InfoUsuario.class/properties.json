@@ -14,7 +14,9 @@
 		"nombre",
 		"apellido",
 		"dni",
-		"userActual"
+		"userActual",
+		"plus",
+		"flagPlus"
 	],
 	"name" : "InfoUsuario",
 	"type" : "normal"

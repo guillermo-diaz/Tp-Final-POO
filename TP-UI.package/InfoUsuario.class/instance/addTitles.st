@@ -15,7 +15,7 @@ nombre font: font.
 apellido font: font.
 dni font: font.
 
-dni left: panelUser left + 25 ; bottom: panelUser bottom - 60.
+dni left: panelUser left + 20 ; bottom: panelUser bottom - 60.
 apellido left: dni left; bottom: dni top - 30.
 nombre left: dni left; bottom: apellido top - 30.
 

@@ -22,7 +22,7 @@ title4 left: contraseña left; bottom: contraseña top - 5.
 
 "col do: [ :title| title position: title position - (0@25) ]."
 col do: [ :title| title font: font ].
-title5 position: plus position - (0@20).
+title5 left: nombre left; top: contraseña bottom + 30.
 
 self addMorph: title1; addMorph: title2; addMorph: title3;addMorph: title4;
 addMorph: title5.

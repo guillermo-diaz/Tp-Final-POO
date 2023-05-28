@@ -54,8 +54,8 @@ cambiarTipoUsuario mouseAction: [
 	ow := self owner.
 	self delete.
 	morph := Login sistema: sistemaGestor.
-	window := morph warningWindow.
-	window position: window position + (250@0).
+	window := morph warningWindow: 'Se cambió el tipo de usuario' size: 180@60.
+	window center: morph center; left: morph left + 40.
 	morph addMorph: window.
 	ow addMorphCentered: morph.
 

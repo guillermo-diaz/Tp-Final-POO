@@ -12,8 +12,8 @@ autores := OrderedCollection new.
 autores add: (Autor crearAutorNombre: 'Araki Hirohiko').
 autores2 add: (Autor crearAutorNombre: 'Naoki Urasawa').
 autores3 add: (Autor crearAutorNombre: 'Kentaro Miura').
-autores3 add: (Autor crearAutorNombre: 'Kouji Mori').
-user := (Usuario crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 123).
+autores3 add: (Autor crearAutorNombre: 'Kouji Mori'). 
+user := (Usuario crearUsuarioDni: '1' nombre: 'Guille' apellido: 'Diaz' contra: '123').
 	biblio := (Biblioteca ide: '1' direccion: 'Perito Moreno' nombre: 'Biblioteca 1' telefono: '123214123' representante: 'Yo').
 	biblio2 := (Biblioteca ide: '2' direccion: 'Cumelen' nombre: 'Biblioteca 2' telefono: '123555523' representante: 'Yo').
 	libro3 := (Libro crearLibroNombre: '20th Century Boys' editorial: 'Ivrea' añoEdicion: 1900 autores: autores2 ).
@@ -27,7 +27,6 @@ user := (Usuario crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 12
 	col2 add: libro3.
 	txt := 'Gestor de Bibliotecas'.
 	
-	user := (Usuario crearUsuarioDni: 1 nombre: 'Guille' apellido: 'Diaz' contra: 123).
 	user addBiblioteca: biblio; addBiblioteca: biblio2.
 	(biblio2 registrarPrestamoConUsuario: user libros: col2) .
 	biblio registrarPrestamoConUsuario: user libros: colLibros.

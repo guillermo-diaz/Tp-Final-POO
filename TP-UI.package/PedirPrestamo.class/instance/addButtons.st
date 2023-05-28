@@ -9,5 +9,6 @@ volver mouseAction: [
 	ow := self owner.
 	self delete.
 	ow addMorphCentered: (UserMenu sistema: sistemaGestor user: usuario )
-	 ]
+	 ].
+
 

@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "CheckboxMorph",
+	"super" : "CheckboxButtonMorph",
 	"category" : "TP-UI-Components",
 	"classinstvars" : [ ],
 	"pools" : [ ],

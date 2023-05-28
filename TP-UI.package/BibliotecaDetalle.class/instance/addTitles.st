@@ -28,7 +28,7 @@ representante  left: containerInfo left + 20; bottom: verLibros top - 30.
 telefono left: representante left; bottom: representante top - 30.
 direccion left: telefono left; bottom: telefono top - 30.
 nombre left: direccion left; bottom: direccion top - 30.
-prestamos center: panelPrestamos center; bottom: panelPrestamos top - 10.
+prestamos center: panelPrestamos center; bottom: panelPrestamos top - 5.
 
 containerInfo addMorph: nombre; addMorph: direccion ; addMorph: telefono ; addMorph: representante; addMorph: prestamos  .
 

@@ -10,7 +10,7 @@ agregarAutor := Button nombre: 'Agregar' colour: theme button2 dimension: 80@25.
 agregarAutor rounded.
 agregarLibro := Button stringMorphText: addBook  color: self colorButtons extent: 80@30.
 agregarLibro rounded.
-audiolibro := Checkbox nombre: 'Audiolibro' tamaño: 100@30.
+audiolibro := Checkbox new.
 
 inputNombre  borderColor: Color gray. 
 inputEditorial  borderColor: Color gray.
@@ -24,7 +24,7 @@ inputAño top: inputEditorial top; left: inputEditorial right + 20.
 inputAutores top: inputEditorial bottom + 40; left: inputEditorial left.
 agregarLibro center: rectangulo center; bottom: rectangulo bottom - 15.
 agregarAutor left: inputAutores right + 10; top: inputAutores top.
-audiolibro top: inputAutores bottom + 15; left: inputAutores left.
+audiolibro top: inputAutores bottom + 30; left: inputAutores left.
 
 
 rectangulo addMorph: volver; addMorph: inputNombre; addMorph: inputEditorial ; addMorph: inputAño ; addMorph: inputAutores; addMorph: agregarLibro; addMorph: agregarAutor ; addMorph: audiolibro   .
@@ -56,7 +56,7 @@ agregarLibro mouseAction: [
 	( (Helper stringIsEmpty: nombre) or:((Helper stringIsEmpty: editorial) or: (Helper stringIsEmpty: año)) ) ifFalse: [ 
 		|libro ow| 
 		
-		(audiolibro isSelected) ifTrue:[
+		(audiolibro selected) ifTrue:[
 			libro := Audiolibro crearLibroNombre: nombre editorial: editorial  añoEdicion: año autores: colAutores.
 		] ifFalse: [  
 		libro := Libro crearLibroNombre: nombre editorial: editorial  añoEdicion: año autores: colAutores.

@@ -10,36 +10,22 @@ nombre := TextField transparentExtent: 155@30.
 apellido := TextField transparentExtent: 155@30.
 dni := TextField transparentExtent: 155@30.
 contraseña := TextField transparentExtent: 155@30.
-plus := Checkbox nombre: 'Plus' tamaño: 50@30.
+plus := Checkbox new extent: 100@100.
 
-nombre borderColor: self colorBorderShapes. 
+nombre borderColor: self colorBorderShapes; maxLength: 10. 
 apellido borderColor: self colorBorderShapes.
 dni borderColor: self colorBorderShapes.
 contraseña borderColor: self colorBorderShapes.
 
-"nombre := TextField crearTamaño: 155@30.
-apellido := TextField crearTamaño: 155@30.
-dni := TextField crearTamaño: 155@30.
-contraseña := TextField crearTamaño: 155@30.
-plus := Checkbox nombre: 'Plus' tamaño: 50@30."
-
-
-
-
 botonRegistrarse := Button nombre: 'Registrarse' colour: Color green dimension: 155@30.
 self addMorph: plus.
-plus font: ((LogicalFont
-				 familyName: StandardFonts defaultFont familyName
-				 pointSize: 11 )).
-				
-
 
 nombre center: rectangulo center.
 nombre position: nombre position - (0@140).
 apellido position: nombre position +(0@65).
 dni position: apellido position + (0@65).
 contraseña position: dni position + (0@65).
-plus position: contraseña position + (0@60).
+plus right: rectangulo right - 20; top: contraseña bottom + 34.
 botonRegistrarse position: contraseña position + (0@95); borderColor: colorBorde darker; borderWidth: 3.
 
 
@@ -57,8 +43,21 @@ volver mouseAction: [
 	self delete.
 	ow addMorphCentered: (Login sistema: sistemaGestor).].
 botonRegistrarse mouseAction: [ 
-	|window|
-	window := self warningWindow: 'Usuario Registrado'.
-	window position: window position + (250@0).
+	|user unDni txt window| 
+	unDni := dni input.
+	(Helper stringIsEmpty: unDni) ifFalse: [ 
+		 
+		(plus selected) ifTrue: [ user := UsuarioPlus crearUsuarioDni: unDni nombre: nombre input apellido: apellido input contra: contraseña input fecha: Date today.] 
+		ifFalse: [ user := Usuario crearUsuarioDni: unDni nombre: nombre input apellido: apellido input contra: contraseña input  ].
+		
+		(sistemaGestor agregarUsuario: user) ifTrue: [ 
+		txt := 'Usuario Registrado'.
+		 ] ifFalse: [ 
+		txt := 'DNI repetido, ingrese otro'.
+		 ].
+	
+	
+	window := self warningWindow: txt size: 160@70.
+	window center: self center; left: self left + 40.
 	self addMorph: window.
-	 ]
+	 ] ]

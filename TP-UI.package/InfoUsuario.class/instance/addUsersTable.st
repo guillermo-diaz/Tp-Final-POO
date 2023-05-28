@@ -12,6 +12,16 @@ sistemaGestor ifNotNil: [
 	"Panel prestamos"
 	info := ''. 
 	userActual  := (tableUsers elementAt: index).
+	(userActual esPlus) ifTrue: [ 
+			flagPlus ifFalse: [ 
+				self addPlus
+				 ]
+		] ifFalse: [
+		flagPlus ifTrue: [ 
+			self removeMorph: plus.
+			flagPlus := false.
+			 ]
+		].
 	(sistemaGestor prestamosDe: userActual) do: [ :pres| info := info, pres toString, '\\' withCRs.].
 	panelPrestamos setText: info.
 	

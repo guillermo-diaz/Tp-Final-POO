@@ -33,22 +33,18 @@ volver mouseAction: [
 	ow addMorphCentered: (InfoBiblioteca sistema: sistemaGestor )
 	].
 registrar mouseAction: [ 
-	|biblio ide| 
+	|biblio ide txt window| 
 	ide := inputIde input.
 	(Helper stringIsEmpty: ide) ifFalse: [  
 	biblio := Biblioteca crearBibliotecaIde: ide direccion: (inputDireccion input) nombre: (inputNombre input) telefono: (inputTelefono input) representante: (inputRepresentante input).
 	(sistemaGestor agregarBiblioteca: biblio) ifTrue: [ 
-		|window|
-		window := self warningWindow: 'Biblioeca Registrada'.
-		window center: self center; left: self left + 60.
-		self addMorph: window.
-		
+		txt := 'Biblioteca Registrada'.
 		 ] ifFalse: [ 
-		|window|
-		window := self warningWindow: 'Ide repetido, ingrese otro'.
-		window center: self center; left: self left + 60.
+		txt := 'Id repetido, ingrese otro'.
+		 ].
+		window := self warningWindow: txt size: 180@65.
+		window center: self center; left: self left + 30.
 		self addMorph: window.
-		 ]
 	
 	
 ]

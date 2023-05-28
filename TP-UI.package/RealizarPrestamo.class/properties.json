@@ -1,0 +1,24 @@
+{
+	"commentStamp" : "",
+	"super" : "UserOption",
+	"category" : "TP-UI-Views",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"volver",
+		"rectangulo",
+		"biblioteca",
+		"tableLibros",
+		"selectedLibro",
+		"panelLibros",
+		"colLibros",
+		"warning",
+		"flagWarning",
+		"warning2",
+		"realizar",
+		"agregarLibro"
+	],
+	"name" : "RealizarPrestamo",
+	"type" : "normal"
+}

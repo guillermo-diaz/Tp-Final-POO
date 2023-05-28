@@ -1,3 +1,3 @@
 as yet unclassified
 esIgual: user 
-^ dni = user dni 
+^ dni match: user dni 

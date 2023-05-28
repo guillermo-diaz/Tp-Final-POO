@@ -23,14 +23,24 @@ botonLogin position: inContra position + (0@50); borderWidth: 3; borderColor: co
 botonSignup position: botonLogin position + (100@0); borderWidth: 3; borderColor: colorBorde darker.
 
 botonLogin mouseAction: [
-	|user ow|
-	ow := self owner.
-	self delete.
-	
-	"testing, luego borrar"
-	user := sistemaGestor usuario: 1.
-	ow addMorphCentered: (UserMenu sistema: sistemaGestor user: user) .
-	
+	|user ow dni window txt|
+	dni := inDni input.
+	user := sistemaGestor usuario: dni.
+	(user) ifNotNil: [  
+		(user tieneContraseña: (inContra input)) ifTrue: [   
+			ow := self owner.
+			self delete.
+			ow addMorphCentered: (UserMenu sistema: sistemaGestor user: user) .
+		] ifFalse: [ txt := 'Contraseña Incorrecta' ]
+	] ifNil: [ 
+			txt := 'Usuario no encontrado'
+	 ].
+
+	txt ifNotNil: [ 
+			window := self warningWindow: txt size: 180@60.
+			window center: self center; left: self left + 40.
+			self addMorph: window.
+		 ].
 ].
 botonSignup mouseAction: [
 	|ow| 

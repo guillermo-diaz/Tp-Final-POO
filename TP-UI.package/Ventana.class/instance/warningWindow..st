@@ -14,9 +14,9 @@ window := BorderedMorph new.
 	
 	
 	cerrar center: window center; borderWidth: 1; borderColor: Color black.
-	cerrar position: cerrar position + (0@15).
+	cerrar bottom: window bottom - 10.
 	nombre center: window center.
-	nombre position: nombre position - (0@10).
+	nombre bottom: cerrar top - 10.
 	
 	
 	cerrar mouseAction: [ window delete.].

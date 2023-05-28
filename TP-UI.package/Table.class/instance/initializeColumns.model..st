@@ -8,9 +8,8 @@ beResizable;
 vResizing: #spaceFill; hResizing: #spaceFill;
 onAnnouncement: FTStrongSelectionChanged do: [ :ann | doubleClickBlock value: self selectedIndex ];
 onAnnouncement: FTSelectionChanged do: [ :ann | clickBlock value: self selectedIndex ];
- dataSource: model.
+dataSource: model.
 			
-model addDependent: self.
 doubleClickBlock := [ :e | nil ]. 
 clickBlock := [ :e | nil ].
 
