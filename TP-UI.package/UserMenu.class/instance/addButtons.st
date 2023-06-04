@@ -51,6 +51,7 @@ botonLogout mouseAction: [
 	ow addMorphCentered: (Login sistema: sistemaGestor).].
 cambiarTipoUsuario mouseAction: [ 
 	|window morph ow|
+	(sistemaGestor  cambiarTipoDe: usuario) ifTrue: [   
 	ow := self owner.
 	self delete.
 	morph := Login sistema: sistemaGestor.
@@ -58,7 +59,7 @@ cambiarTipoUsuario mouseAction: [
 	window center: morph center; left: morph left + 40.
 	morph addMorph: window.
 	ow addMorphCentered: morph.
-
+	]
 ].
 addBiblio mouseAction: [
 	|ow| 

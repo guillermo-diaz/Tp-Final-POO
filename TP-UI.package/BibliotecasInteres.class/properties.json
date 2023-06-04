@@ -10,7 +10,8 @@
 		"agregar",
 		"rectangleContainer",
 		"barra",
-		"table"
+		"table",
+		"listaBiblioteca"
 	],
 	"name" : "BibliotecasInteres",
 	"type" : "normal"

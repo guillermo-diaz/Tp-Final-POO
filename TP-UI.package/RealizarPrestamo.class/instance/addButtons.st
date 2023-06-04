@@ -44,10 +44,16 @@ agregarLibro mouseAction: [
 realizar mouseAction: [ 
 	(colLibros size > 0) ifTrue: [ 
 		(biblioteca registrarPrestamoConUsuario: usuario libros: colLibros) ifTrue: [ 
-			|ow| 
+			|ow morph ventana| 
 			ow:= self owner.
 			self delete.
-			ow addMorphCentered: (PedirPrestamo sistema: sistemaGestor  user: usuario).
+			morph := (PedirPrestamo sistema: sistemaGestor  user: usuario).
+			ventana := (self warningWindow: 'Prestamo realizado' size: 140@60).
+			ventana color: (Color fromString: 'fbfbb0').
+			ventana center: morph center.
+			morph addMorph: ventana.
+			
+			ow addMorphCentered: morph .
 			
 		 ] ifFalse: [ 
 		 	|txt|
@@ -55,9 +61,11 @@ realizar mouseAction: [
 				warning := nil. flagWarning := false.].
 			warning2 ifNotNil: [self removeMorph: warning2].
 			
+			(biblioteca tienePrestamoActivo: usuario) ifTrue: [txt := 'Ya tiene un prestamo activo'] ifFalse: [  
 			(colLibros size > 5) ifTrue: [txt := 'Máximo 5 libros'] ifFalse: [
 				(usuario estaSuspendido) ifTrue: [ txt := 'Usted está suspendido' ]  ifFalse: [  
 				txt := 'Debe ser plus para pedir audiolibros'.]
+			]
 			].
 			warning2  := txt asMorph color: Color red.
 			warning2 center: realizar center; bottom: realizar top - 5.

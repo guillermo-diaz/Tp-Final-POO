@@ -1,3 +1,3 @@
 as yet unclassified
 puedePedirAudiolibros 
-^ self estaSuspendido and: fechaVencimientoCuota > Date today 
+^ (self estaSuspendido) not and: fechaVencimientoCuota > Date today 

@@ -1,7 +1,7 @@
 adding
 addTitles 
 |name address repre tel font prestamos| 
-	font := (Helper getFontWithSize: 12).
+	font := (Helper getFontWithSize: 11.5).
 
 	name := 'Nombre: '.
 	address  := 'Direccion: '.
@@ -22,7 +22,8 @@ nombre := StringMorph contents: name font: font.
 direccion := StringMorph contents: address font: font.
 telefono := StringMorph contents: tel font: font.
 representante := StringMorph contents: repre font: font.
-prestamos := StringMorph contents: 'Prestamos' font: ((Helper getFontWithSize: 13) forceBold ).
+prestamos := StringMorph contents: 'Prestamos' font: ((Helper getFontWithSize: 12) forceBold ).
+prestamos color: (Color white).
 
 representante  left: containerInfo left + 20; bottom: verLibros top - 30. 
 telefono left: representante left; bottom: representante top - 30.

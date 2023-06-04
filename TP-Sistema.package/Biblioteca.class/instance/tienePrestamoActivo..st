@@ -1,3 +1,4 @@
 accessing
 tienePrestamoActivo: user 
-(self prestamosActivosDe: user) ifEmpty: [ ^false ] ifNotEmpty: [ ^true ] 
+colPrestamos detect: [ :pres | (pres esDeUsuario: user) and: pres estaActivo  ] ifNone: [ ^false ].
+^true

@@ -20,6 +20,13 @@ volver mouseAction: [
 	ow addMorphCentered: (UserMenu sistema: sistemaGestor user: usuario )
 	 ].
 agregar mouseAction: [ 
-	usuario addBiblioteca:  (Biblioteca ide: 1 direccion: 'Perito Moreno' nombre: 'Biblio 1' telefono: '123214123' representante: 'Yo').
-	usuario changed.
+	|biblio| 
+	biblio := barra selectedItem.
+	(biblio) ifNotNil: [  
+		usuario addBiblioteca: (listaBiblioteca at: biblio).
+		listaBiblioteca removeKey: biblio.
+		barra searchList: listaBiblioteca keys.  
+		table refresh.
+		barra changed.
+	].
 	 ] 

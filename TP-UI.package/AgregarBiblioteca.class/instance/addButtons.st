@@ -35,6 +35,7 @@ volver mouseAction: [
 registrar mouseAction: [ 
 	|biblio ide txt window| 
 	ide := inputIde input.
+	self checkLength ifTrue:[ 
 	(Helper stringIsEmpty: ide) ifFalse: [  
 	biblio := Biblioteca crearBibliotecaIde: ide direccion: (inputDireccion input) nombre: (inputNombre input) telefono: (inputTelefono input) representante: (inputRepresentante input).
 	(sistemaGestor agregarBiblioteca: biblio) ifTrue: [ 
@@ -48,4 +49,7 @@ registrar mouseAction: [
 	
 	
 ]
+] ifFalse: [ window := self warningWindow: 'Datos ' size: 180@65.
+		window center: self center; left: self left + 30.
+		self addMorph: window.]
 	 ]

@@ -11,7 +11,11 @@
 		"table",
 		"panelInfo",
 		"devolverLibros",
-		"devolverAudiolibros"
+		"devolverAudiolibros",
+		"selectedBiblio",
+		"titleLibros",
+		"titleAudiolibros",
+		"aviso"
 	],
 	"name" : "DevolverPrestamo",
 	"type" : "normal"

@@ -45,6 +45,8 @@ volver mouseAction: [
 botonRegistrarse mouseAction: [ 
 	|user unDni txt window| 
 	unDni := dni input.
+	
+	self checkLength ifTrue: [  
 	(Helper stringIsEmpty: unDni) ifFalse: [ 
 		 
 		(plus selected) ifTrue: [ user := UsuarioPlus crearUsuarioDni: unDni nombre: nombre input apellido: apellido input contra: contraseña input fecha: Date today.] 
@@ -60,4 +62,8 @@ botonRegistrarse mouseAction: [
 	window := self warningWindow: txt size: 160@70.
 	window center: self center; left: self left + 40.
 	self addMorph: window.
-	 ] ]
+	 ] ] ifFalse: [  window := self warningWindow: 'Datos muy largos' size: 160@70.
+	window center: self center; left: self left + 40.
+	self addMorph: window.].
+
+]
