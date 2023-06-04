@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 iniIdentificador: ide direccion: dire nombre: nom telefono: tel representante: repre 
 identificador := ide. 
 direccion := dire.

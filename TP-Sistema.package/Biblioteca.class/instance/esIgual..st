@@ -1,3 +1,3 @@
-as yet unclassified
+comparing
 esIgual: biblio 
-^ identificador = biblio getIde 
+^ identificador = biblio identificador

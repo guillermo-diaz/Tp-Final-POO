@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 verificarLibros: libros
 
 libros detect: [:libro| libro esPrestado] ifNone: [ ^true ].

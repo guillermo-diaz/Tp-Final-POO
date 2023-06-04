@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 librosDisponibles
 ^ colLibros reject: [:libro| libro esPrestado]
