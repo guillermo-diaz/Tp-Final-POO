@@ -22,7 +22,7 @@ devolverLibros mouseAction: [
 		aviso ifNotNil: [ 
 				self removeMorph: aviso.
 				 ].
-		(selectedBiblio devolverLibrosDe: usuario) ifTrue: [
+		(selectedBiblio devolverPrestamoDe: usuario) ifTrue: [
 			
 			
 			aviso := 'Libros devueltos!' asMorph.
@@ -43,7 +43,7 @@ devolverAudiolibros mouseAction: [
 		aviso ifNotNil: [ 
 				self removeMorph: aviso.
 				 ].
-		(selectedBiblio devolverAudiolibrosDe: usuario ) ifTrue: [
+		(selectedBiblio devolverPrestamoAudiolibrosDe: usuario ) ifTrue: [
 			
 			
 			aviso := 'Audiolibros devueltos!' asMorph.

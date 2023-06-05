@@ -1,3 +1,3 @@
 as yet unclassified
 estaAtrasado 
-^ fechaEntrega isNil  
+^ fechaEntrega isNil and: (fechaMax < Date today) 
