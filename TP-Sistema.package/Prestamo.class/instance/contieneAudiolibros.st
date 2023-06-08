@@ -1,3 +1,5 @@
 as yet unclassified
 contieneAudiolibros
-^ colLibros first esAudiolibro 
+
+colLibros ifNotEmpty: [ ^  colLibros first esAudiolibro]. 
+^ false 

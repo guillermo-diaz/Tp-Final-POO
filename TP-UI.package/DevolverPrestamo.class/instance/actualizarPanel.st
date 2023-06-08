@@ -5,7 +5,7 @@ selectedBiblio ifNotNil: [
 	info := ''. 
 	prestamos := (selectedBiblio prestamosActivosDe: usuario).
 (prestamos  isEmptyOrNil) ifTrue:[info := 'Información de prestamos: '] ifFalse: [  
-	p1 := (prestamos at: 1).
+	p1 := (prestamos first).
 	p1 contieneAudiolibros ifTrue: [prestNormal := p1] ifFalse: [prestAudiolibro := p1].
 	
 	info := info,p1 toString, '\\' withCRs.

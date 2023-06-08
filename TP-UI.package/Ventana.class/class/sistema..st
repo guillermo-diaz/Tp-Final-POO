@@ -1,3 +1,3 @@
-as yet unclassified
+constructor
 sistema: system  
 ^ (self new) initializeWith: system . 

@@ -9,8 +9,9 @@ registrarPrestamoConUsuario: usuario libros: libros
 	fechaMax := Date today addDays: diasPrestamos. "la fecha max de entrega"
 	self prestarLibros: libros.
 	
+	normales ifNotEmpty: [  
 	prestamo := Prestamo crearPrestamoUsuario: usuario libros: normales fechaMax: fechaMax.
-	colPrestamos add: prestamo.
+	colPrestamos add: prestamo.].
 	audiolibros ifNotEmpty:[
 		|pres2|
 		
