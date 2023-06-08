@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "FTSimpleDataSource",
-	"category" : "TP-UI",
+	"category" : "TP-UI-Components",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

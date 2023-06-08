@@ -1,3 +1,3 @@
-adding
+setters
 bibliotecasInteres: colBiblio  
 colBibliotecas := colBiblio.

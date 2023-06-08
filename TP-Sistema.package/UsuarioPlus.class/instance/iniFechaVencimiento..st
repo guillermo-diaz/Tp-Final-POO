@@ -1,3 +1,3 @@
-as yet unclassified
+initialization
 iniFechaVencimiento: fecha
 fechaVencimientoCuota := fecha.

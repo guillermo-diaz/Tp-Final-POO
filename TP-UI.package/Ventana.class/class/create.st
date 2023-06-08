@@ -1,5 +1,5 @@
 running
-run 
+create 
 |sistema | 
 sistema := Sistema Precargado.
 	

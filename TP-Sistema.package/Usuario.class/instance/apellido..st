@@ -1,3 +1,3 @@
-accessing
+setters
 apellido: unApe
 apellido := unApe.

@@ -1,3 +1,3 @@
-accessing
+setters
 diasSuspendido: days 
 diasSuspendido := days .

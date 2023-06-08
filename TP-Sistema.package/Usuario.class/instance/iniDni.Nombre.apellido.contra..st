@@ -1,4 +1,4 @@
-as yet unclassified
+initialize
 iniDni: unDni Nombre: unNombre apellido: unApe contra: contra 
 dni := unDni.
 nombre := unNombre.

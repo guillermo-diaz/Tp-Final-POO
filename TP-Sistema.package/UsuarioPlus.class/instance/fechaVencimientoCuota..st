@@ -1,3 +1,3 @@
-as yet unclassified
+setters
 fechaVencimientoCuota: fecha
 fechaVencimientoCuota := fecha.
