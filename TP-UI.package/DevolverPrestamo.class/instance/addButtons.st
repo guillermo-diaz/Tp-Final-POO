@@ -19,11 +19,14 @@ volver mouseAction: [
 	 ].
 devolverLibros mouseAction: [ 
 	selectedBiblio ifNotNil: [ 
+		|pres|
 		aviso ifNotNil: [ 
 				self removeMorph: aviso.
 				 ].
-		(selectedBiblio devolverPrestamoDe: usuario) ifTrue: [
-			
+		pres := (selectedBiblio devolverPrestamoDe: usuario).
+		
+		(pres isNotNil)ifTrue: [
+			(pres fechaMax < Date today) ifTrue: [usuario suspender: sistemaGestor kDias].
 			
 			aviso := 'Libros devueltos!' asMorph.
 			aviso color: Color white.
@@ -40,11 +43,13 @@ devolverLibros mouseAction: [
 	 ].
 devolverAudiolibros mouseAction: [ 
 	selectedBiblio ifNotNil: [ 
+		|pres|
 		aviso ifNotNil: [ 
 				self removeMorph: aviso.
 				 ].
-		(selectedBiblio devolverPrestamoAudiolibrosDe: usuario ) ifTrue: [
-			
+			pres := (selectedBiblio devolverPrestamoAudiolibrosDe: usuario ).
+			pres isNotNil ifTrue: [
+			(pres fechaMax < Date today) ifTrue: [usuario suspender: sistemaGestor kDias].
 			
 			aviso := 'Audiolibros devueltos!' asMorph.
 			aviso color: Color white.

@@ -2,6 +2,7 @@ as yet unclassified
 Precargado
 |sistema biblio1 biblio2 biblio3  colLibros user1 user2 user3 user4 | 
 sistema := self new.
+sistema kDias: 4.
 
 "Libros"
 colLibros := Sistema colLibrosPrecargados.
