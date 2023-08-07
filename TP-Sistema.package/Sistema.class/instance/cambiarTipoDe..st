@@ -9,6 +9,7 @@ cambiarTipoDe: unUsuario
 	user := (UsuarioPlus crearUsuarioDni: unUsuario dni nombre: unUsuario nombre apellido: unUsuario apellido contra: unUsuario contraseña fecha: (Date today addDays: 30)) ].
 user bibliotecasInteres: unUsuario bibliotecasInteres.
 colUsuarios add: user.
+self changed: colUsuarios.
 ^ true
 ].
 ^ false

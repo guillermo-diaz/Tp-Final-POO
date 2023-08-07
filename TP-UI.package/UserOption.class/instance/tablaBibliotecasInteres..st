@@ -1,5 +1,10 @@
 as yet unclassified
 tablaBibliotecasInteres: aSize 
 usuario ifNotNil: [  
-^ (Table aModel: (ModelBiblioteca aCollection: usuario bibliotecasInteres ) aColumns: #('Nombre' 'Dirección' 'Teléfono' 'Representante') asOrderedCollection  extent: aSize). 
+	|b t|
+	b := usuario bibliotecasInteres.
+	t := (Table aModel: (ModelBiblioteca aObject: usuario withCollection: b) aColumns: #('Nombre' 'Dirección' 'Teléfono' 'Representante') asOrderedCollection  extent: aSize).
+	
+	
+	^ t  
  ]

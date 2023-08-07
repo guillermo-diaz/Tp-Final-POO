@@ -5,6 +5,7 @@ borderButton := Color fromString: '2c5345'.
 shape := Color fromString: 'f5e4a8'.
 borderShape := Color fromString: 'f59f66'.
 self iconPath; backgroundPath .
+"self linuxFacu."
 table := Color gray. 
 button2 := Color fromString: 'f0a422'.
 panel := Color fromString: 'F5FF86'.

@@ -6,4 +6,5 @@ table headerColor: self colorShapes  .
 
 table center: rectangleContainer center; bottom: rectangleContainer bottom - 20.
 
+
 rectangleContainer addMorph: table . ]

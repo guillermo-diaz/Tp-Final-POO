@@ -3,3 +3,4 @@ initialize
 colBibliotecas := OrderedCollection new.
 colAutores := OrderedCollection new.
 colUsuarios := OrderedCollection new.
+self changed

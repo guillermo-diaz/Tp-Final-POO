@@ -4,4 +4,5 @@ super initialize.
 colLibros := OrderedCollection new.
 flagWarning := false.
 self addFigure; addButtons; addTableLibros; addPanelLibros .
+colLibros addDependent: panelLibros 
 

@@ -4,4 +4,5 @@ usuario := user.
 colLibros := libros.
 fechaMax := fechaM.
 fechaRegistro := Date today.
+self changed.
  

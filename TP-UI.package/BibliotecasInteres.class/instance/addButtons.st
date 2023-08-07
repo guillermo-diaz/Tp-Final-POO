@@ -25,8 +25,5 @@ agregar mouseAction: [
 	(biblio) ifNotNil: [  
 		usuario addBiblioteca: (listaBiblioteca at: biblio).
 		listaBiblioteca removeKey: biblio.
-		barra searchList: listaBiblioteca keys.  
-		table refresh.
-		barra changed.
 	].
 	 ] 

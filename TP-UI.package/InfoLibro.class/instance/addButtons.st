@@ -35,6 +35,5 @@ eliminarLibro mouseAction: [
 	selectedLibro  ifNotNil: [ 
 		
 		biblioteca removeLibro: selectedLibro.
-		tableLibros refresh.
 		selectedLibro := nil.
 	 ]]
